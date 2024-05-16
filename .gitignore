@@ -1,2 +1,6 @@
 
-Demo.API/
+Demo.API/bin
+
+Demo.API/obj/
+
+.DS_Store
