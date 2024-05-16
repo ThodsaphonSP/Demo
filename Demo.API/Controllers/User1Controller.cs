@@ -1,18 +1,20 @@
 using Asp.Versioning;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.API.Controllers
 {
-    [ApiVersion("2.0")]
+    [ApiVersion("1.0")]
     [Tags("User")]
-    [Route("api/v{version:apiVersion}/User")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
-    public class UserV2Controller : ControllerBase
+    public class User1Controller : ControllerBase
     {
+
         [HttpGet]
         public string Get()
         {
-            return "version 2";
+            return "version 1";
         }
     }
 }
